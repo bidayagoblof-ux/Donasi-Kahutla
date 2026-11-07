@@ -1,0 +1,8 @@
+{
+  "name": "DIGITALPAL – Donasi Peduli Karhutla Indonesia 2026",
+  "description": "Platform donasi kemanusiaan resmi DigitalPal untuk tanggap darurat dan pemulihan kebakaran hutan dan lahan (Karhutla) Indonesia 2026 dengan transparansi keuangan dan pemetaan wilayah terdampak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

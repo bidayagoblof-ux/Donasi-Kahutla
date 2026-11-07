@@ -1,0 +1,1025 @@
+# MASTER PROMPT PENGEMBANGAN WEBSITE DONASI DIGITALPAL
+## DIGITALPAL – DONASI PEDULI KARHUTLA INDONESIA 2026
+
+### 1. PERAN DAN TANGGUNG JAWAB
+
+Bertindaklah sebagai tim pengembang profesional yang terdiri dari:
+
+- Senior Full-Stack Developer.
+- UI/UX Designer.
+- Payment Gateway Integration Engineer.
+- Database Architect.
+- Cybersecurity Engineer.
+- Data Analyst.
+- GIS Developer.
+- Humanitarian Information System Specialist.
+- Quality Assurance Engineer.
+
+Tugas Anda adalah membangun sebuah website donasi kemanusiaan yang profesional, modern, responsif, aman, dan dapat dikembangkan untuk organisasi sosial DigitalPal (Sahabat Digital).
+
+Nama proyek:
+
+DIGITALPAL – DONASI PEDULI KARHUTLA INDONESIA 2026
+
+Tagline:
+
+"Bersama Pulihkan Harapan, Bantu Masyarakat Terdampak Karhutla."
+
+Website ini bertujuan menghimpun donasi masyarakat secara online untuk mendukung bantuan kemanusiaan kepada masyarakat yang terdampak kebakaran hutan dan lahan (karhutla) di Indonesia.
+
+PENTING:
+
+Bangun aplikasi yang benar-benar fungsional, bukan sekadar desain frontend atau prototype statis.
+
+Implementasikan frontend, backend, database, autentikasi administrator, sistem pembayaran otomatis, pencatatan donasi, dan laporan transparansi sesuai konfigurasi layanan yang tersedia.
+
+Jangan mengklaim pembayaran sungguhan sudah berfungsi apabila kredensial dan integrasi payment gateway belum dikonfigurasi.
+
+---
+
+### 2. FILE JSON SUMBER DATA
+
+Saya akan mengunggah file:
+
+dataset_karhutla_digitalpal_2026.json
+
+File tersebut merupakan dataset awal yang telah dikumpulkan dari berbagai sumber informasi mengenai karhutla Indonesia tahun 2026.
+
+Baca dan analisis seluruh file sebelum mengembangkan website.
+
+Gunakan file JSON untuk:
+
+- Statistik situasi karhutla nasional.
+- Informasi provinsi terdampak.
+- Data wilayah prioritas.
+- Informasi hotspot.
+- Luas lahan terbakar.
+- Informasi penanganan kebakaran.
+- Kondisi kesehatan masyarakat.
+- Kebutuhan bantuan kemanusiaan.
+- Kelompok masyarakat rentan.
+- Rekomendasi program bantuan.
+- Sumber informasi resmi.
+
+Ketentuan pengolahan:
+
+1. Jangan mengarang angka atau informasi.
+2. Jangan mengubah data sumber tanpa alasan yang jelas.
+3. Jangan menganggap nilai null sebagai nol.
+4. Jangan menggabungkan data yang berbeda periode dan metode pengukuran.
+5. Setiap statistik harus mencantumkan tanggal dan sumber data.
+6. Pisahkan data faktual, estimasi, ilustrasi, dan data yang belum diverifikasi.
+7. Jika informasi tidak tersedia, tampilkan "Data belum tersedia".
+8. Jangan menampilkan target bantuan sebagai bantuan yang sudah disalurkan.
+9. Jangan menampilkan data simulasi sebagai transaksi donasi sungguhan.
+10. Sediakan mekanisme impor dataset JSON terbaru.
+
+Pisahkan sistem menjadi dua sumber data:
+
+A. DATA INFORMASI KARHUTLA
+Menggunakan file JSON sebagai sumber awal.
+
+B. DATA TRANSAKSI DONASI
+Menggunakan database aplikasi untuk menyimpan transaksi donatur, pembayaran, program, pengeluaran, dan distribusi bantuan.
+
+Jangan menyimpan transaksi donasi hanya di file JSON atau localStorage.
+
+---
+
+### 3. IDENTITAS DAN DESAIN WEBSITE
+
+Buat tampilan website dengan konsep:
+
+Modern Humanitarian Donation Platform.
+
+Karakter desain:
+
+- Profesional.
+- Modern.
+- Elegan.
+- Humanis.
+- Minimalis.
+- Memiliki kredibilitas lembaga sosial.
+- Mudah digunakan.
+- Menarik untuk calon donatur.
+- Mengutamakan transparansi.
+
+Palet warna:
+
+- Navy Blue: #142D4E
+- Dark Blue: #1F456E
+- Teal: #159A9C
+- Orange: #F0A43A
+- Red: #D9534F
+- White: #FFFFFF
+- Background: #F5F7FA
+- Gray: #64748B
+- Green: #31966B
+
+Gunakan warna navy dan teal sebagai warna utama.
+
+Gunakan warna oranye untuk ajakan donasi dan warna merah untuk informasi darurat.
+
+Tipografi:
+
+Gunakan Inter, Plus Jakarta Sans, atau Poppins.
+
+Gunakan ikon Lucide Icons.
+
+Buat layout responsif untuk desktop, laptop, tablet, dan smartphone.
+
+Desain harus memiliki kualitas seperti platform crowdfunding dan organisasi kemanusiaan profesional.
+
+---
+
+### 4. STRUKTUR NAVIGASI WEBSITE
+
+Buat menu navigasi utama:
+
+1. Beranda.
+2. Tentang Kami.
+3. Kondisi Karhutla.
+4. Program Donasi.
+5. Donasi Sekarang.
+6. Transparansi.
+7. Dokumentasi.
+8. Kontak.
+
+Tambahkan tombol utama:
+
+DONASI SEKARANG
+
+Tombol ini harus mengarahkan pengguna ke halaman atau formulir donasi.
+
+---
+
+### 5. HALAMAN BERANDA
+
+Buat landing page yang menarik dan memiliki daya persuasif.
+
+Bagian pertama atau Hero Section:
+
+Judul:
+
+"Ulurkan Kepedulian untuk Saudara Kita yang Terdampak Karhutla."
+
+Subjudul:
+
+"Kebakaran hutan dan lahan tidak hanya menghanguskan lingkungan, tetapi juga mengancam kesehatan, kehidupan, dan masa depan masyarakat. Bersama DigitalPal, mari hadirkan bantuan nyata bagi mereka yang membutuhkan."
+
+Tombol:
+
+- Donasi Sekarang.
+- Lihat Program Bantuan.
+
+Gunakan gambar dokumentasi atau ilustrasi kemanusiaan yang relevan.
+
+Jangan menggunakan foto yang memberikan kesan sebagai dokumentasi kejadian nyata apabila gambar tersebut hanya ilustrasi.
+
+Bagian berikutnya:
+
+A. Ringkasan situasi karhutla Indonesia.
+
+B. Statistik utama:
+- Hotspot.
+- Luas lahan terbakar.
+- Wilayah terdampak.
+- Informasi kesehatan masyarakat.
+
+C. Program bantuan prioritas.
+
+D. Mengapa harus berdonasi melalui DigitalPal.
+
+E. Perkembangan donasi.
+
+F. Dokumentasi kegiatan.
+
+G. Laporan transparansi.
+
+H. Ajakan donasi.
+
+I. Footer berisi identitas, kontak, kebijakan privasi, dan informasi organisasi.
+
+---
+
+### 6. HALAMAN PROGRAM DONASI
+
+Buat halaman yang menampilkan program penggalangan dana.
+
+Program awal:
+
+1. Bantuan Kesehatan Masyarakat.
+2. Bantuan Air Bersih.
+3. Bantuan Pangan dan Sembako.
+4. Bantuan Masker dan Perlindungan Pernapasan.
+5. Bantuan Kelompok Rentan.
+6. Bantuan Operasional Relawan.
+7. Bantuan Kemanusiaan Darurat Karhutla.
+
+Setiap program memiliki:
+
+- Foto program.
+- Nama program.
+- Deskripsi.
+- Lokasi sasaran.
+- Target donasi.
+- Total donasi terkumpul.
+- Persentase pencapaian.
+- Tanggal mulai.
+- Tanggal berakhir.
+- Status program.
+- Tombol Donasi Sekarang.
+- Detail kebutuhan bantuan.
+
+Perhitungan persentase:
+
+Persentase = (Total donasi terkumpul / Target donasi) × 100%.
+
+Batasi tampilan progress agar tidak melebihi 100%, tetapi tetap simpan jumlah donasi sebenarnya.
+
+Data program harus dikelola administrator.
+
+Jangan membuat target atau total donasi palsu.
+
+Jika program belum memiliki target atau transaksi, tampilkan status yang sesuai.
+
+---
+
+### 7. HALAMAN DONASI SEKARANG
+
+Ini merupakan fitur utama website.
+
+Buat halaman donasi dengan desain yang sederhana, menarik, dan mudah digunakan.
+
+Tahapan donasi:
+
+LANGKAH 1 – PILIH PROGRAM
+
+Tampilkan daftar program donasi yang masih aktif.
+
+Donatur memilih program yang ingin didukung.
+
+Sediakan pilihan:
+
+- Donasi untuk program tertentu.
+- Donasi untuk dana kemanusiaan umum.
+
+LANGKAH 2 – PILIH NOMINAL
+
+Sediakan pilihan nominal:
+
+- Rp25.000.
+- Rp50.000.
+- Rp100.000.
+- Rp250.000.
+- Rp500.000.
+- Rp1.000.000.
+- Nominal lainnya.
+
+Donatur dapat memasukkan nominal sendiri.
+
+Validasi nominal minimum dan maksimum melalui backend sesuai kebijakan administrator.
+
+LANGKAH 3 – DATA DONATUR
+
+Kolom:
+
+- Nama lengkap.
+- Email.
+- Nomor WhatsApp (opsional sesuai kebutuhan).
+- Pesan atau doa (opsional).
+- Pilihan donasi anonim.
+
+Jika donatur memilih anonim, jangan tampilkan namanya pada daftar donatur publik.
+
+Tetap simpan informasi yang diperlukan untuk administrasi dan kepatuhan transaksi.
+
+LANGKAH 4 – RINGKASAN DONASI
+
+Tampilkan:
+
+- Nama program.
+- Nominal donasi.
+- Identitas donatur sesuai pilihan.
+- Biaya transaksi jika ada dan diketahui.
+- Total pembayaran.
+
+Jelaskan apabila biaya payment gateway dibebankan kepada donatur atau organisasi.
+
+Jangan menambahkan biaya tersembunyi.
+
+LANGKAH 5 – PEMBAYARAN
+
+Setelah donatur menekan tombol Bayar Sekarang:
+
+1. Backend membuat transaksi.
+2. Backend memvalidasi nominal dan program.
+3. Backend membuat order ID unik.
+4. Backend meminta instruksi pembayaran kepada payment gateway.
+5. Sistem menampilkan halaman atau komponen pembayaran resmi.
+6. Donatur menyelesaikan pembayaran.
+7. Payment gateway mengirimkan notifikasi pembayaran ke backend.
+8. Backend memvalidasi notifikasi.
+9. Status transaksi diperbarui secara otomatis.
+10. Donatur menerima halaman konfirmasi.
+
+Jangan pernah mengubah status menjadi PAID hanya karena pengguna menekan tombol pembayaran atau kembali ke halaman sukses.
+
+---
+
+### 8. INTEGRASI PAYMENT GATEWAY
+
+Gunakan sistem pembayaran online otomatis.
+
+Rancang arsitektur payment gateway agar dapat diintegrasikan dengan penyedia pembayaran Indonesia.
+
+Prioritaskan integrasi Midtrans sebagai implementasi awal, tetapi gunakan arsitektur modular agar Xendit atau penyedia lain dapat ditambahkan kemudian.
+
+Metode pembayaran yang diharapkan, sesuai dukungan akun dan penyedia:
+
+- QRIS.
+- Virtual Account BCA.
+- Virtual Account BNI.
+- Virtual Account BRI.
+- Virtual Account Mandiri.
+- Virtual Account bank lain yang tersedia.
+- E-wallet yang didukung.
+- Metode pembayaran lain yang tersedia pada akun merchant.
+
+PENTING:
+
+Jangan menganggap seluruh metode tersebut otomatis tersedia. Periksa metode yang diaktifkan pada akun payment gateway.
+
+#### Arsitektur integrasi
+
+Buat modul:
+
+- paymentService.
+- paymentGatewayAdapter.
+- createPayment.
+- checkPaymentStatus.
+- handlePaymentNotification.
+- verifyWebhookSignature.
+- expirePayment.
+- refundPayment jika didukung.
+
+Gunakan backend untuk komunikasi dengan payment gateway.
+
+Jangan pernah menaruh Server Key, Secret Key, API Secret, atau kredensial privat di frontend.
+
+Simpan kredensial dalam environment variables.
+
+Contoh konfigurasi:
+
+MIDTRANS_SERVER_KEY=
+MIDTRANS_CLIENT_KEY=
+MIDTRANS_IS_PRODUCTION=false
+APP_BASE_URL=
+DATABASE_URL=
+
+Gunakan sandbox terlebih dahulu.
+
+Jika kredensial belum tersedia:
+
+- Buat struktur integrasi.
+- Buat halaman pembayaran dalam mode sandbox atau demo yang jelas diberi label.
+- Jangan mengaku pembayaran sungguhan telah aktif.
+- Jangan membuat QRIS palsu.
+- Jangan membuat nomor virtual account palsu.
+- Jangan menyatakan transaksi berhasil tanpa konfirmasi penyedia pembayaran.
+
+#### Pembuatan transaksi
+
+Backend harus:
+
+1. Membuat order ID unik.
+2. Memvalidasi jumlah pembayaran.
+3. Mengambil harga dan target program dari database.
+4. Menghitung total transaksi di backend.
+5. Memastikan program masih aktif.
+6. Membuat transaksi pada payment gateway.
+7. Menyimpan respons transaksi yang diperlukan.
+8. Mengembalikan instruksi pembayaran yang aman kepada frontend.
+
+#### Webhook dan notifikasi
+
+Buat endpoint khusus untuk notifikasi payment gateway.
+
+Contoh:
+
+POST /api/payments/webhook
+
+Webhook harus:
+
+- Memvalidasi signature sesuai dokumentasi resmi penyedia.
+- Memastikan order ID terdaftar.
+- Memastikan nominal pembayaran cocok.
+- Memeriksa status transaksi.
+- Mencegah notifikasi diproses dua kali.
+- Mencatat waktu notifikasi.
+- Memperbarui status transaksi secara aman.
+- Mencatat kegagalan proses.
+
+Gunakan idempotency agar satu notifikasi tidak membuat donasi tercatat berulang kali.
+
+Jangan mempercayai status pembayaran yang dikirim dari browser pengguna.
+
+#### Status pembayaran
+
+Gunakan status berikut:
+
+- PENDING.
+- PAID.
+- EXPIRED.
+- FAILED.
+- CANCELLED.
+- REFUNDED.
+- PARTIALLY_REFUNDED jika didukung.
+
+Pisahkan status pembayaran dari status penyaluran bantuan.
+
+---
+
+### 9. HALAMAN KONFIRMASI DONASI
+
+Setelah pembayaran berhasil diverifikasi, tampilkan:
+
+- Ucapan terima kasih.
+- Nama program.
+- Nominal donasi.
+- Nomor transaksi.
+- Tanggal pembayaran.
+- Status pembayaran.
+- Metode pembayaran.
+- Bukti transaksi atau kuitansi.
+- Tombol unduh bukti donasi.
+- Tombol kembali ke beranda.
+
+Contoh pesan:
+
+"Terima kasih telah menjadi bagian dari gerakan kemanusiaan DigitalPal. Dukungan Anda membantu menghadirkan harapan bagi masyarakat yang terdampak karhutla."
+
+Bukti donasi hanya dapat diterbitkan untuk transaksi yang telah terverifikasi.
+
+Sediakan pengiriman email konfirmasi jika layanan email telah dikonfigurasi.
+
+---
+
+### 10. HALAMAN DAFTAR DONATUR
+
+Buat halaman daftar donatur yang telah menyelesaikan pembayaran.
+
+Tampilkan:
+
+- Nama donatur atau "Hamba Tuhan" / "Donatur Anonim" sesuai kebijakan penamaan yang dipilih.
+- Nominal donasi jika donatur mengizinkan publikasi.
+- Program yang didukung.
+- Tanggal donasi.
+
+Sediakan pilihan donasi anonim.
+
+Jangan mempublikasikan email, nomor telepon, nomor transaksi lengkap, atau informasi pribadi lainnya.
+
+Jangan menampilkan transaksi PENDING, FAILED, EXPIRED, atau CANCELLED sebagai donasi berhasil.
+
+---
+
+### 11. HALAMAN TRANSPARANSI
+
+Buat halaman transparansi keuangan yang menjadi salah satu fitur terpenting DigitalPal.
+
+Tampilkan:
+
+A. RINGKASAN DONASI
+
+- Total donasi berhasil diterima.
+- Jumlah transaksi berhasil.
+- Total dana yang dialokasikan.
+- Total dana yang telah digunakan.
+- Saldo dana yang belum digunakan.
+
+B. PENGELUARAN
+
+- Tanggal pengeluaran.
+- Nama program.
+- Kategori pengeluaran.
+- Jumlah dana.
+- Keterangan.
+- Bukti transaksi.
+- Lokasi kegiatan.
+
+C. PENYALURAN BANTUAN
+
+- Tanggal penyaluran.
+- Lokasi.
+- Jenis bantuan.
+- Jumlah bantuan.
+- Penerima manfaat dalam bentuk agregat.
+- Dokumentasi.
+
+D. LAPORAN
+
+- Laporan pemasukan.
+- Laporan pengeluaran.
+- Laporan program.
+- Laporan penyaluran.
+- Dokumentasi kegiatan.
+
+Semua angka harus dihitung berdasarkan transaksi dan pengeluaran yang benar-benar tersimpan dan telah diverifikasi.
+
+Gunakan prinsip:
+
+Total Dana Tersedia = Total Dana Donasi Berhasil - Total Dana Keluar yang Telah Disahkan.
+
+Bedakan dana yang telah dialokasikan, dana yang telah dibelanjakan, dan dana yang telah disalurkan.
+
+Jangan menyatakan dana telah digunakan hanya karena administrator memasukkan rencana anggaran.
+
+---
+
+### 12. HALAMAN INFORMASI KARHUTLA
+
+Gunakan file JSON sebagai sumber informasi.
+
+Tampilkan:
+
+- Situasi karhutla nasional.
+- Peta wilayah terdampak.
+- Data provinsi.
+- Luas lahan terbakar.
+- Titik panas.
+- Kondisi kesehatan masyarakat.
+- Kebutuhan bantuan.
+- Informasi sumber resmi.
+
+Gunakan peta interaktif dengan Leaflet.
+
+Jika koordinat detail tidak tersedia, tampilkan data agregat tingkat wilayah.
+
+Jangan membuat lokasi titik kebakaran palsu.
+
+Setiap angka harus menampilkan periode, tanggal, dan sumbernya.
+
+---
+
+### 13. HALAMAN DOKUMENTASI
+
+Buat halaman dokumentasi penyaluran bantuan.
+
+Fitur:
+
+- Galeri foto.
+- Galeri video.
+- Tanggal kegiatan.
+- Lokasi.
+- Nama program.
+- Deskripsi kegiatan.
+- Jenis bantuan.
+- Jumlah bantuan yang disalurkan.
+- Jumlah penerima manfaat yang telah diverifikasi.
+
+Pisahkan dokumentasi nyata dari gambar ilustrasi.
+
+Sediakan fitur pengunggahan dokumentasi melalui administrator.
+
+Perhatikan privasi penerima bantuan, khususnya anak-anak dan kelompok rentan.
+
+---
+
+### 14. DASHBOARD ADMINISTRATOR
+
+Buat dashboard administrator dengan sistem autentikasi.
+
+Menu administrator:
+
+1. Dashboard.
+2. Data Donasi.
+3. Transaksi Pembayaran.
+4. Program Donasi.
+5. Data Donatur.
+6. Data Pengeluaran.
+7. Penyaluran Bantuan.
+8. Dokumentasi.
+9. Data Karhutla.
+10. Impor JSON.
+11. Laporan Keuangan.
+12. Pengaturan Website.
+13. Pengaturan Payment Gateway.
+14. Manajemen Pengguna.
+
+#### Dashboard admin
+
+Tampilkan:
+
+- Total donasi berhasil.
+- Total transaksi berhasil.
+- Transaksi pending.
+- Transaksi gagal.
+- Jumlah donatur.
+- Program aktif.
+- Total pengeluaran disahkan.
+- Total dana tersedia.
+
+Semua data harus berasal dari database.
+
+#### Manajemen donasi
+
+Administrator dapat:
+
+- Melihat transaksi.
+- Mencari berdasarkan order ID.
+- Memfilter berdasarkan tanggal.
+- Memfilter berdasarkan program.
+- Melihat status pembayaran.
+- Melihat metode pembayaran.
+- Melihat detail donatur sesuai hak akses.
+
+Administrator tidak boleh mengubah transaksi PENDING menjadi PAID secara manual tanpa proses verifikasi yang sah.
+
+Jika ada koreksi transaksi, simpan audit log dan alasan perubahan.
+
+#### Manajemen program
+
+Administrator dapat:
+
+- Membuat program.
+- Mengubah program.
+- Mengaktifkan program.
+- Menonaktifkan program.
+- Mengatur target.
+- Mengunggah foto.
+- Mengelola deskripsi.
+- Melihat pencapaian donasi.
+
+#### Manajemen pengeluaran
+
+Administrator dapat mencatat:
+
+- Nama pengeluaran.
+- Program.
+- Kategori.
+- Tanggal.
+- Nominal.
+- Keterangan.
+- Bukti transaksi.
+- Status persetujuan.
+
+Gunakan status:
+
+- Draft.
+- Menunggu persetujuan.
+- Disetujui.
+- Ditolak.
+- Dibayar.
+
+Simpan riwayat perubahan.
+
+---
+
+### 15. ROLE DAN HAK AKSES
+
+Buat minimal tiga jenis pengguna.
+
+ADMINISTRATOR:
+
+- Mengelola seluruh sistem.
+- Mengelola program donasi.
+- Memeriksa transaksi.
+- Mengelola laporan.
+- Mengelola pengguna.
+- Mengelola sumber data.
+
+PETUGAS:
+
+- Mengelola dokumentasi.
+- Mencatat penyaluran.
+- Mengirim laporan lapangan.
+- Mengelola data yang diberikan aksesnya.
+
+PENGUNJUNG / DONATUR:
+
+- Melihat informasi.
+- Memilih program.
+- Melakukan donasi.
+- Melihat status donasi melalui mekanisme aman.
+- Mengunduh bukti donasi setelah pembayaran terverifikasi.
+
+Terapkan autentikasi dan otorisasi di backend, bukan hanya menyembunyikan menu di frontend.
+
+---
+
+### 16. DATABASE
+
+Gunakan Firebase atau Supabase sebagai database dan layanan autentikasi, dengan mempertimbangkan kemampuan deployment proyek.
+
+Jika menggunakan Supabase, buat rancangan tabel:
+
+1. users.
+2. donors.
+3. donation_programs.
+4. donations.
+5. payment_transactions.
+6. payment_notifications.
+7. expenses.
+8. expense_approvals.
+9. aid_distributions.
+10. field_assessments.
+11. documents.
+12. audit_logs.
+13. system_settings.
+
+Relasi utama:
+
+- Satu program dapat memiliki banyak donasi.
+- Satu donasi dapat memiliki transaksi pembayaran sesuai desain pembayaran.
+- Transaksi pembayaran memiliki order ID unik.
+- Satu program dapat memiliki banyak pengeluaran.
+- Satu program dapat memiliki banyak distribusi bantuan.
+- Setiap pengeluaran dan distribusi memiliki bukti atau dokumentasi jika tersedia.
+
+Gunakan primary key, foreign key, indeks, dan constraint yang sesuai.
+
+Simpan nominal dalam satuan rupiah sebagai integer atau tipe numerik yang aman.
+
+Jangan menyimpan informasi sensitif yang tidak diperlukan.
+
+Terapkan Row Level Security atau pengaturan akses database yang setara.
+
+---
+
+### 17. KEAMANAN SISTEM
+
+Prioritaskan keamanan transaksi donasi.
+
+Wajib menerapkan:
+
+- Validasi data di backend.
+- Proteksi API.
+- Autentikasi administrator.
+- Role-based access control.
+- Webhook signature verification.
+- Pencegahan duplicate transaction.
+- Idempotency.
+- Audit log.
+- Rate limiting pada endpoint sensitif.
+- Proteksi terhadap SQL injection.
+- Proteksi terhadap XSS dan CSRF sesuai arsitektur.
+- Penggunaan HTTPS.
+- Environment variables untuk rahasia.
+- Validasi file yang diunggah.
+- Pembatasan ukuran dan tipe file.
+- Backup database.
+
+Jangan menaruh secret key di JavaScript frontend.
+
+Jangan menyimpan data kartu pembayaran.
+
+Biarkan data pembayaran sensitif ditangani penyedia payment gateway sesuai sistem resminya.
+
+Jangan menyediakan endpoint yang dapat membuat transaksi sukses tanpa verifikasi.
+
+---
+
+### 18. EMAIL DAN NOTIFIKASI
+
+Jika layanan email tersedia, buat notifikasi:
+
+- Donasi berhasil.
+- Pembayaran menunggu.
+- Pembayaran kedaluwarsa.
+- Pembayaran gagal.
+- Bukti donasi.
+- Pengumuman program bantuan.
+
+Kirim email hanya berdasarkan status yang sudah diverifikasi.
+
+Jangan mengirim email yang mengklaim donasi berhasil jika status masih PENDING.
+
+---
+
+### 19. TEKNOLOGI
+
+Gunakan:
+
+Frontend:
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Lucide Icons.
+- Recharts.
+- Leaflet.
+
+Backend:
+- Node.js.
+- API REST.
+- Firebase Functions atau Supabase Edge Functions jika sesuai.
+
+Database:
+- Supabase PostgreSQL atau Firebase.
+
+Payment Gateway:
+- Midtrans sebagai integrasi awal.
+- Arsitektur adapter untuk penyedia lain.
+
+Storage:
+- Supabase Storage atau Firebase Storage.
+
+Deployment:
+- Platform hosting yang mendukung frontend dan backend.
+- HTTPS.
+- Environment variables.
+
+Pilih kombinasi teknologi yang benar-benar dapat dijalankan dalam lingkungan proyek Google AI Studio.
+
+Jangan membuat integrasi palsu hanya agar tampilan terlihat berfungsi.
+
+---
+
+### 20. PENGUJIAN PEMBAYARAN
+
+Sebelum sistem digunakan untuk menerima donasi sungguhan, lakukan pengujian sandbox.
+
+Skenario pengujian:
+
+1. Donasi berhasil.
+2. Donasi pending.
+3. Pembayaran kedaluwarsa.
+4. Pembayaran gagal.
+5. Notifikasi webhook diterima.
+6. Notifikasi webhook duplikat.
+7. Nominal tidak cocok.
+8. Order ID tidak ditemukan.
+9. Signature tidak valid.
+10. Pengguna menutup halaman sebelum pembayaran selesai.
+11. Pengguna kembali ke halaman sukses tanpa membayar.
+12. Program dinonaktifkan ketika transaksi akan dibuat.
+
+Pastikan hanya pembayaran yang telah diverifikasi yang masuk dalam total donasi berhasil.
+
+Buat laporan hasil pengujian.
+
+---
+
+### 21. TAMPILAN MOBILE
+
+Optimalkan pengalaman donatur menggunakan smartphone.
+
+Pada mobile:
+
+- Hero section ringkas.
+- Tombol donasi mudah dijangkau.
+- Kartu program tersusun vertikal.
+- Formulir tidak terlalu panjang.
+- Pilihan nominal mudah ditekan.
+- Instruksi pembayaran jelas.
+- Halaman pembayaran tidak terpotong.
+- Navigasi sederhana.
+- Ukuran font mudah dibaca.
+
+Buat tombol Donasi Sekarang yang mudah ditemukan pada setiap halaman program.
+
+---
+
+### 22. STRUKTUR PROYEK
+
+Susun kode secara modular.
+
+Contoh:
+
+src/
+  components/
+  pages/
+  layouts/
+  hooks/
+  services/
+    dataService
+    donationService
+    paymentService
+    paymentGatewayAdapter
+    reportingService
+  utils/
+  types/
+  config/
+
+server/
+  routes/
+  controllers/
+  services/
+  middleware/
+  webhooks/
+  database/
+
+public/
+  images/
+  icons/
+  data/
+
+Pisahkan frontend, backend, dan konfigurasi.
+
+Jangan menempatkan seluruh kode di satu file.
+
+Buat dokumentasi instalasi dan konfigurasi.
+
+---
+
+### 23. URUTAN PENGERJAAN
+
+TAHAP 1 — ANALISIS JSON
+
+Baca seluruh file JSON, pahami skema, dan identifikasi informasi yang tersedia.
+
+TAHAP 2 — UI/UX
+
+Buat desain seluruh halaman dan sistem navigasi.
+
+TAHAP 3 — FRONTEND
+
+Implementasikan landing page, program donasi, formulir donasi, informasi karhutla, transparansi, dan dokumentasi.
+
+TAHAP 4 — DATABASE
+
+Buat skema database dan autentikasi.
+
+TAHAP 5 — SISTEM DONASI
+
+Implementasikan pembuatan order, penyimpanan transaksi, dan alur pembayaran.
+
+TAHAP 6 — PAYMENT GATEWAY
+
+Integrasikan Midtrans menggunakan sandbox terlebih dahulu.
+
+TAHAP 7 — WEBHOOK
+
+Implementasikan validasi notifikasi dan pembaruan status pembayaran.
+
+TAHAP 8 — DASHBOARD ADMIN
+
+Bangun seluruh fungsi pengelolaan transaksi, program, pengeluaran, dan distribusi.
+
+TAHAP 9 — TRANSPARANSI
+
+Bangun laporan keuangan berdasarkan transaksi dan pengeluaran yang terverifikasi.
+
+TAHAP 10 — PENGUJIAN
+
+Uji seluruh fitur, terutama keamanan pembayaran dan validitas data.
+
+TAHAP 11 — DEPLOYMENT
+
+Siapkan konfigurasi produksi setelah pengujian berhasil dan kredensial resmi tersedia.
+
+---
+
+### 24. HASIL AKHIR YANG WAJIB DIHASILKAN
+
+Saya menginginkan aplikasi website yang mencakup:
+
+1. Landing page DigitalPal.
+2. Informasi situasi karhutla.
+3. Peta wilayah terdampak.
+4. Halaman program donasi.
+5. Formulir donasi.
+6. Pembayaran online otomatis.
+7. QRIS sesuai dukungan payment gateway.
+8. Virtual account sesuai dukungan payment gateway.
+9. E-wallet sesuai dukungan payment gateway.
+10. Konfirmasi pembayaran otomatis.
+11. Bukti donasi.
+12. Daftar donatur dengan opsi anonim.
+13. Transparansi pemasukan dan pengeluaran.
+14. Dokumentasi penyaluran.
+15. Dashboard administrator.
+16. Pengelolaan program.
+17. Pengelolaan transaksi.
+18. Pengelolaan laporan.
+19. Pengelolaan data karhutla dari JSON.
+20. Sistem keamanan dan autentikasi.
+
+### 25. INSTRUKSI PENUTUP
+
+Mulailah dengan menganalisis file JSON yang saya unggah.
+
+Setelah memahami data, bangun website secara bertahap dengan kualitas desain dan implementasi profesional.
+
+Prioritaskan:
+
+- Kemudahan masyarakat dalam berdonasi.
+- Keamanan transaksi.
+- Keakuratan informasi.
+- Transparansi keuangan.
+- Akuntabilitas penggunaan dana.
+- Kemudahan pengelolaan oleh administrator.
+
+Jangan membuat nominal donasi, nama donatur, transaksi, bukti pembayaran, atau penyaluran fiktif.
+
+Jangan mengaktifkan mode produksi sebelum kredensial resmi payment gateway, konfigurasi database, webhook, dan pengujian keamanan selesai.
+
+Jika ada konfigurasi yang belum tersedia, buat struktur integrasinya dan berikan petunjuk langkah demi langkah untuk mengaktifkannya.
+
+Hasil akhir harus berupa website donasi DigitalPal yang dapat dikembangkan menjadi platform penggalangan dana kemanusiaan profesional.
+
+NAMA PROYEK:
+DIGITALPAL – DONASI PEDULI KARHUTLA INDONESIA 2026
+
+TAGLINE:
+"Bersama Pulihkan Harapan, Bantu Masyarakat Terdampak Karhutla."

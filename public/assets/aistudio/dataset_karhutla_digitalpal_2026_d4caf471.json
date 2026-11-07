@@ -1,0 +1,713 @@
+{
+  "metadata": {
+    "dataset_id": "digitalpal-karhutla-indonesia-2026",
+    "title": "Dataset Karhutla Indonesia 2026 dan Pemetaan Kebutuhan Kemanusiaan",
+    "publisher": "DigitalPal - Sahabat Digital (draft dataset)",
+    "language": "id-ID",
+    "generated_at": "2026-10-30",
+    "data_cutoff": "2026-10-30",
+    "timezone": "Asia/Jakarta",
+    "version": "1.0.0",
+    "description": "Kompilasi data publik mengenai karhutla, dampak masyarakat, respons pemerintah, dan kebutuhan kemanusiaan. Data historis/statistik ini bukan feed real-time.",
+    "usage": {
+      "recommended": "Gunakan sebagai seed data website. Tampilkan tanggal pengamatan, sumber, dan status verifikasi pada setiap indikator.",
+      "warning": "Jangan menampilkan rekomendasi kebutuhan sebagai hasil asesmen desa. Jangan menyimpulkan bahwa hotspot sama dengan kebakaran terverifikasi atau bahwa angka penduduk terdampak adalah jumlah pengungsi.",
+      "update_policy": "Perbarui dari sumber resmi sebelum publikasi dan beri timestamp setiap kali data diganti."
+    }
+  },
+  "definitions": {
+    "hotspot": "Anomali panas yang terdeteksi satelit; perlu verifikasi lapangan dan bukan otomatis titik kebakaran terkonfirmasi.",
+    "area_burned_ha": "Luas lahan terbakar menurut sumber dan metode pelaporan yang disebutkan.",
+    "area_under_response_ha": "Luas lahan yang masih dalam penanganan/pemadaman pada waktu laporan; bukan total luas terbakar tahunan.",
+    "affected_population": "Penduduk terdampak menurut definisi sumber; tidak otomatis berarti mengungsi.",
+    "ispa_cases": "Kasus ISPA yang dicatat dalam periode/rekap sumber; tidak dapat dianggap seluruhnya disebabkan karhutla tanpa analisis epidemiologis."
+  },
+  "national_situation": {
+    "bnpb_snapshot_2026-10-24T15:00:00+07:00": {
+      "source_id": "SRC-BNPB-2026-10-24",
+      "hotspots_count": 13910,
+      "burned_area_ha": 25409,
+      "area_not_extinguished_ha": 17942,
+      "unit": "hectare",
+      "status": "reported_snapshot",
+      "notes": "Data sementara berdasarkan pemantauan sistem informasi geografis BNPB dan dapat berubah."
+    },
+    "priority_provinces_bnpb_2026-10-24": [
+      {
+        "province": "Kalimantan Tengah",
+        "hotspots_count": 8049,
+        "burned_area_ha": 13944,
+        "area_not_extinguished_ha": 11786,
+        "source_id": "SRC-BNPB-2026-10-24"
+      },
+      {
+        "province": "Sumatera Selatan",
+        "hotspots_count": 1335,
+        "burned_area_ha": 3429,
+        "area_not_extinguished_ha": 2472,
+        "source_id": "SRC-BNPB-2026-10-24"
+      },
+      {
+        "province": "Kalimantan Barat",
+        "hotspots_count": 1137,
+        "burned_area_ha": 2500,
+        "area_not_extinguished_ha": 1547,
+        "source_id": "SRC-BNPB-2026-10-24"
+      },
+      {
+        "province": "Kalimantan Selatan",
+        "hotspots_count": 362,
+        "burned_area_ha": 526,
+        "area_not_extinguished_ha": 317,
+        "source_id": "SRC-BNPB-2026-10-24"
+      },
+      {
+        "province": "Papua Selatan",
+        "hotspots_count": 487,
+        "burned_area_ha": 310,
+        "area_not_extinguished_ha": 117,
+        "source_id": "SRC-BNPB-2026-10-24"
+      }
+    ],
+    "other_regions_note": "BNPB menyebut Sulawesi Tenggara, Lampung, Kepulauan Bangka Belitung, Nusa Tenggara Timur, dan Maluku Utara juga memiliki hotspot dan luas kebakaran. Nilai rinci tidak dimasukkan karena tidak tersedia dalam cuplikan sumber yang dipakai.",
+    "ihcp_health_snapshot_2026-10-21": {
+      "source_id": "SRC-IHCP-2026-10-26",
+      "ispa_cases": 307618,
+      "ispa_under_five_cases": 69335,
+      "affected_population": 19911359,
+      "affected_regencies_cities": 68,
+      "notes": "Rekap IHCP yang mengutip pembaruan Kemenkes 21 Oktober 2026 pukul 10.00 WIB. Angka penduduk terdampak bukan angka pengungsi."
+    },
+    "health_age_risk_breakdown_2026-10-19": {
+      "source_id": "SRC-IHCP-2026-10-26",
+      "under_five_ispa_cases": 69335,
+      "children_6_9_ispa_cases": 77144,
+      "elderly_over_60_ispa_cases": 49708,
+      "asthma_or_copd_cases": 22,
+      "pregnant_women": null,
+      "outdoor_workers": null,
+      "notes": "Data ibu hamil dan pekerja luar ruangan masih dalam proses pemilahan menurut IHCP."
+    }
+  },
+  "focus_province": {
+    "province": "Kalimantan Tengah",
+    "bnpb_snapshot_2026-10-24": {
+      "source_id": "SRC-BNPB-2026-10-24",
+      "hotspots_count": 8049,
+      "burned_area_ha": 13944,
+      "area_not_extinguished_ha": 11786
+    },
+    "provincial_cumulative_2026-01-01_to_2026-10-28": {
+      "source_id": "SRC-KALTENG-2026-10-30",
+      "hotspots_count": 371692,
+      "fire_incidents": 7634,
+      "burned_area_ha": 20699,
+      "personnel_involved": 16478,
+      "bore_wells_built_minimum": 600,
+      "clean_water_distributed_liters_minimum": 14000000,
+      "food_aid_intended_recipients_minimum": 450000,
+      "notes": "Angka hotspot kumulatif merupakan angka yang dilaporkan Pemprov/BPBD Kalteng. Jangan disamakan dengan snapshot BNPB 24 Oktober; sumber, periode, dan metode berbeda."
+    },
+    "daily_report_2026-10-28": {
+      "source_id": "SRC-KALTENG-2026-10-30",
+      "hotspots_count": 76,
+      "fire_incidents": 26,
+      "burned_area_ha": 43.93,
+      "notes": "Laporan BPBD Kalteng yang dikutip Pemprov; angka kejadian harian."
+    },
+    "response_and_conditions": [
+      {
+        "topic": "peatland_fire_behavior",
+        "description": "Api dapat bertahan dan membara di bawah permukaan gambut walaupun api permukaan terlihat padam; pembasahan berulang dan pemantauan bara diperlukan.",
+        "source_ids": [
+          "SRC-KALTENG-2026-10-30",
+          "SRC-BNPB-2026-10-24"
+        ]
+      },
+      {
+        "topic": "government_response",
+        "description": "Pemprov melaporkan lebih dari 600 sumur bor, lebih dari 14 juta liter distribusi air bersih, bantuan pangan yang disiapkan untuk lebih dari 450.000 warga, serta dukungan obat-obatan, multivitamin, masker, konsumsi dan perlengkapan keselamatan.",
+        "source_ids": [
+          "SRC-KALTENG-2026-10-30"
+        ]
+      },
+      {
+        "topic": "weather_and_fire_risk",
+        "description": "Awal musim hujan berlangsung bertahap dan tidak merata. BMKG Kalteng memperkirakan hujan meningkat pada November dan puncak musim hujan pada Desember-Januari; risiko kebakaran gambut tetap perlu dipantau.",
+        "source_ids": [
+          "SRC-KALTENG-2026-10-30",
+          "SRC-BMKG-2026-10-29"
+        ]
+      }
+    ],
+    "priority_assessment_areas": [
+      {
+        "name": "Palangka Raya",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Wilayah yang disebut IHCP dalam kelompok ISPU kategori berbahaya pada 19 Oktober; verifikasi kualitas udara terbaru dibutuhkan.",
+        "source_ids": [
+          "SRC-IHCP-2026-10-26"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Kotawaringin Timur",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Disebut dalam laporan ISPU berbahaya dan memiliki aktivitas karhutla dalam laporan BPBD.",
+        "source_ids": [
+          "SRC-IHCP-2026-10-26"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Gunung Mas",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Disebut dalam laporan ISPU berbahaya; perlu verifikasi desa dan kualitas udara.",
+        "source_ids": [
+          "SRC-IHCP-2026-10-26"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Barito Selatan",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Disebut dalam laporan ISPU berbahaya; perlu verifikasi desa dan kualitas udara.",
+        "source_ids": [
+          "SRC-IHCP-2026-10-26"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Katingan",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Disebut dalam laporan ISPU berbahaya dan laporan kejadian karhutla.",
+        "source_ids": [
+          "SRC-IHCP-2026-10-26"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Seruyan",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Muncul dalam laporan kejadian kebakaran dan pemantauan BPBD; perlu verifikasi lapangan.",
+        "source_ids": [
+          "SRC-KALTENG-2026-10-30"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Kapuas",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Muncul dalam laporan kejadian kebakaran; perlu verifikasi lapangan.",
+        "source_ids": [
+          "SRC-KALTENG-2026-10-30"
+        ],
+        "status": "assessment_priority_not_live_status"
+      },
+      {
+        "name": "Pulang Pisau",
+        "province": "Kalimantan Tengah",
+        "assessment_reason": "Muncul dalam laporan kejadian kebakaran; perlu verifikasi lapangan.",
+        "source_ids": [
+          "SRC-KALTENG-2026-10-30"
+        ],
+        "status": "assessment_priority_not_live_status"
+      }
+    ],
+    "ispu_critical_locations_2026-10-19": [
+      {
+        "location": "Palangka Raya",
+        "ispu": 1291,
+        "category": "Berbahaya"
+      },
+      {
+        "location": "Kotawaringin Timur",
+        "ispu": 1290,
+        "category": "Berbahaya"
+      },
+      {
+        "location": "Gunung Mas",
+        "ispu": null,
+        "category": "Berbahaya"
+      },
+      {
+        "location": "Barito Selatan",
+        "ispu": null,
+        "category": "Berbahaya"
+      },
+      {
+        "location": "Katingan",
+        "ispu": null,
+        "category": "Berbahaya"
+      }
+    ],
+    "notes": "Daftar kabupaten/kota prioritas adalah daftar untuk asesmen, bukan klaim bahwa semua wilayah masih mengalami kondisi darurat pada tanggal website dibuka."
+  },
+  "national_regional_snapshots": [
+    {
+      "province": "Kalimantan Tengah",
+      "area_under_response_ha": 16097,
+      "snapshot_date": "2026-10-22",
+      "source_id": "SRC-BNPB-2026-10-22"
+    },
+    {
+      "province": "Kalimantan Selatan",
+      "area_under_response_ha": 1506,
+      "snapshot_date": "2026-10-22",
+      "source_id": "SRC-BNPB-2026-10-22"
+    },
+    {
+      "province": "Kalimantan Barat",
+      "area_under_response_ha": 1370,
+      "snapshot_date": "2026-10-22",
+      "source_id": "SRC-BNPB-2026-10-22"
+    },
+    {
+      "province": "Sumatera Selatan",
+      "area_under_response_ha": 2050,
+      "snapshot_date": "2026-10-22",
+      "source_id": "SRC-BNPB-2026-10-22"
+    },
+    {
+      "province": "Jambi",
+      "area_under_response_ha": 379,
+      "snapshot_date": "2026-10-22",
+      "source_id": "SRC-BNPB-2026-10-22"
+    },
+    {
+      "province": "Riau",
+      "area_under_response_ha": 2,
+      "snapshot_date": "2026-10-22",
+      "source_id": "SRC-BNPB-2026-10-22"
+    },
+    {
+      "province": "Kalimantan Tengah",
+      "area_under_response_ha": 2458,
+      "snapshot_date": "2026-10-25",
+      "source_id": "SRC-BNPB-2026-10-25"
+    },
+    {
+      "province": "Kalimantan Barat",
+      "area_under_response_ha": 884,
+      "snapshot_date": "2026-10-25",
+      "source_id": "SRC-BNPB-2026-10-25"
+    },
+    {
+      "province": "Kalimantan Selatan",
+      "area_under_response_ha": 52,
+      "snapshot_date": "2026-10-25",
+      "source_id": "SRC-BNPB-2026-10-25"
+    },
+    {
+      "province": "Sumatera Selatan",
+      "area_under_response_ha": 889,
+      "snapshot_date": "2026-10-25",
+      "source_id": "SRC-BNPB-2026-10-25"
+    },
+    {
+      "province": "Jambi",
+      "area_under_response_ha": 89,
+      "snapshot_date": "2026-10-25",
+      "source_id": "SRC-BNPB-2026-10-25"
+    },
+    {
+      "province": "Lampung",
+      "area_under_response_ha": 12,
+      "snapshot_date": "2026-10-25",
+      "source_id": "SRC-BNPB-2026-10-25"
+    }
+  ],
+  "humanitarian_needs": [
+    {
+      "id": "HEALTH-01",
+      "category": "Kesehatan dan perlindungan",
+      "items": [
+        "rumah/tempat singgah dengan udara bersih",
+        "pemeriksaan kesehatan",
+        "layanan kesehatan bergerak",
+        "obat-obatan berdasarkan asesmen tenaga kesehatan",
+        "dukungan oksigen medis untuk pasien yang membutuhkan",
+        "nebulizer melalui fasilitas kesehatan",
+        "suplemen sesuai arahan tenaga kesehatan"
+      ],
+      "priority": "tinggi",
+      "basis": "kebutuhan yang diidentifikasi IHCP",
+      "source_ids": [
+        "SRC-IHCP-2026-10-26"
+      ]
+    },
+    {
+      "id": "PROTECT-01",
+      "category": "Perlindungan dan keselamatan",
+      "items": [
+        "masker N95/respirator yang sesuai ukuran dan terpasang benar",
+        "APD relawan dan petugas",
+        "respirator full-face untuk pekerjaan yang sesuai",
+        "edukasi perlindungan dari asap"
+      ],
+      "priority": "tinggi",
+      "basis": "kebutuhan yang diidentifikasi IHCP",
+      "source_ids": [
+        "SRC-IHCP-2026-10-26"
+      ]
+    },
+    {
+      "id": "WASH-01",
+      "category": "Air bersih dan sanitasi",
+      "items": [
+        "air minum",
+        "air bersih rumah tangga",
+        "jeriken/wadah air",
+        "tangki air bergerak",
+        "perlengkapan kebersihan dan sanitasi"
+      ],
+      "priority": "tinggi",
+      "basis": "kebutuhan IHCP dan kebutuhan dasar rumah tangga",
+      "source_ids": [
+        "SRC-IHCP-2026-10-26",
+        "SRC-KALTENG-2026-10-30"
+      ]
+    },
+    {
+      "id": "FOOD-01",
+      "category": "Pangan",
+      "items": [
+        "beras",
+        "minyak goreng",
+        "telur atau sumber protein",
+        "makanan siap konsumsi",
+        "pangan sesuai kebutuhan bayi/anak dan kondisi khusus"
+      ],
+      "priority": "tinggi",
+      "basis": "kebutuhan dasar dan bantuan pangan pemerintah",
+      "source_ids": [
+        "SRC-KALTENG-2026-10-30",
+        "SRC-IHCP-2026-10-26"
+      ]
+    },
+    {
+      "id": "FIRE-01",
+      "category": "Dukungan operasi pemadaman",
+      "items": [
+        "pompa air/alcon",
+        "selang dan nozzle",
+        "tangki air bergerak",
+        "radio komunikasi",
+        "bahan bakar dan konsumsi petugas",
+        "layanan kesehatan bagi tim pemadam"
+      ],
+      "priority": "operasional",
+      "basis": "kebutuhan operasi yang diidentifikasi IHCP dan BNPB",
+      "source_ids": [
+        "SRC-IHCP-2026-10-26",
+        "SRC-BNPB-2026-10-25"
+      ]
+    },
+    {
+      "id": "LIVELIHOOD-01",
+      "category": "Pemulihan penghidupan",
+      "items": [
+        "asesmen kehilangan pendapatan",
+        "dukungan usaha mikro/pekerja harian",
+        "dukungan pemulihan pertanian sesuai hasil asesmen"
+      ],
+      "priority": "menengah",
+      "basis": "rekomendasi program; bukan daftar kebutuhan terverifikasi per desa",
+      "source_ids": [
+        "SRC-IHCP-2026-10-26"
+      ]
+    }
+  ],
+  "vulnerable_groups": [
+    {
+      "group": "Balita dan anak-anak",
+      "risk": "rentan terhadap paparan asap dan gangguan pernapasan",
+      "recommended_assessment": [
+        "gejala pernapasan",
+        "akses layanan kesehatan",
+        "kebutuhan masker anak",
+        "kebutuhan gizi dan pendidikan"
+      ]
+    },
+    {
+      "group": "Lansia",
+      "risk": "risiko lebih tinggi mengalami komplikasi kesehatan",
+      "recommended_assessment": [
+        "penyakit penyerta",
+        "akses obat",
+        "mobilitas",
+        "dukungan keluarga"
+      ]
+    },
+    {
+      "group": "Ibu hamil dan menyusui",
+      "risk": "membutuhkan pemantauan kesehatan dan perlindungan paparan",
+      "recommended_assessment": [
+        "akses pemeriksaan kehamilan",
+        "kebutuhan gizi",
+        "akses layanan kesehatan"
+      ]
+    },
+    {
+      "group": "Penderita asma/PPOK dan penyakit kronis",
+      "risk": "berisiko mengalami perburukan saat terpapar asap",
+      "recommended_assessment": [
+        "obat rutin",
+        "gejala akut",
+        "akses fasilitas kesehatan"
+      ]
+    },
+    {
+      "group": "Pekerja luar ruangan dan pekerja harian",
+      "risk": "paparan asap dan potensi kehilangan pendapatan",
+      "recommended_assessment": [
+        "jam kerja terpapar",
+        "pendapatan harian",
+        "alat pelindung",
+        "akses layanan kesehatan"
+      ]
+    },
+    {
+      "group": "Keluarga berpenghasilan rendah",
+      "risk": "kemampuan terbatas memenuhi kebutuhan tambahan",
+      "recommended_assessment": [
+        "ketersediaan pangan",
+        "air bersih",
+        "pengeluaran kesehatan",
+        "kehilangan penghasilan"
+      ]
+    },
+    {
+      "group": "Petugas dan relawan pemadam",
+      "risk": "paparan asap, panas, kelelahan, dan bahaya medan",
+      "recommended_assessment": [
+        "APD",
+        "konsumsi dan hidrasi",
+        "kondisi kesehatan",
+        "peralatan komunikasi"
+      ]
+    }
+  ],
+  "recommended_programs": [
+    {
+      "id": "DP-RESP-01",
+      "phase": "respons cepat",
+      "period": "0-7 hari setelah asesmen",
+      "activities": [
+        "verifikasi desa dan keluarga rentan",
+        "distribusi air minum dan pangan",
+        "masker sesuai standar",
+        "rujukan/pemeriksaan kesehatan"
+      ],
+      "note": "Pelaksanaan harus berkoordinasi dengan BPBD, puskesmas, dan pemerintah desa."
+    },
+    {
+      "id": "DP-RESP-02",
+      "phase": "pemenuhan kebutuhan",
+      "period": "1-4 minggu",
+      "activities": [
+        "paket pangan dan kebersihan",
+        "dukungan kesehatan",
+        "dukungan pendidikan bila sekolah terdampak",
+        "bantuan keluarga kehilangan pendapatan"
+      ],
+      "note": "Prioritaskan kesenjangan bantuan yang belum ditutup pemerintah atau organisasi lain."
+    },
+    {
+      "id": "DP-REC-01",
+      "phase": "pemulihan dan pencegahan",
+      "period": "1-3 bulan",
+      "activities": [
+        "pemulihan usaha keluarga",
+        "edukasi pencegahan karhutla",
+        "jaringan relawan desa",
+        "pemulihan lingkungan melalui mitra kompeten"
+      ],
+      "note": "Kegiatan restorasi gambut harus dilakukan oleh pihak yang memiliki kompetensi dan izin yang sesuai."
+    }
+  ],
+  "assessment_form_fields": {
+    "household": [
+      "assessment_id",
+      "assessment_date",
+      "province",
+      "regency_city",
+      "district",
+      "village",
+      "household_head_name_optional",
+      "household_size",
+      "under_five_count",
+      "children_count",
+      "elderly_count",
+      "pregnant_or_lactating_count",
+      "disability_count",
+      "livelihood_type"
+    ],
+    "exposure": [
+      "smoke_exposure_status",
+      "visible_fire_nearby",
+      "distance_to_fire_km_if_known",
+      "school_disruption",
+      "road_access_status",
+      "water_source_status",
+      "air_quality_measurement",
+      "measurement_time"
+    ],
+    "needs": [
+      "food_need",
+      "clean_water_need",
+      "mask_need",
+      "medical_need",
+      "shelter_or_clean_air_need",
+      "income_support_need",
+      "other_needs"
+    ],
+    "aid_tracking": [
+      "aid_item",
+      "quantity",
+      "unit",
+      "date_received",
+      "provider",
+      "verification_status",
+      "evidence_reference"
+    ],
+    "privacy": "Hindari mempublikasikan nama lengkap, nomor telepon, alamat rumah, diagnosis individu, atau data pribadi penerima bantuan. Gunakan ID anonim dan agregasi untuk tampilan publik."
+  },
+  "sample_budget_illustration": {
+    "currency": "IDR",
+    "total": 50000000,
+    "is_illustrative_only": true,
+    "allocations": [
+      {
+        "category": "Pangan",
+        "percentage": 30,
+        "amount": 15000000
+      },
+      {
+        "category": "Kesehatan",
+        "percentage": 25,
+        "amount": 12500000
+      },
+      {
+        "category": "Air bersih",
+        "percentage": 20,
+        "amount": 10000000
+      },
+      {
+        "category": "Kebutuhan keluarga",
+        "percentage": 10,
+        "amount": 5000000
+      },
+      {
+        "category": "Transportasi dan distribusi",
+        "percentage": 10,
+        "amount": 5000000
+      },
+      {
+        "category": "Monitoring dan administrasi",
+        "percentage": 5,
+        "amount": 2500000
+      }
+    ],
+    "warning": "Angka simulasi perencanaan, bukan harga pasar, anggaran pemerintah, atau kebutuhan yang telah diverifikasi."
+  },
+  "sources": [
+    {
+      "id": "SRC-KALTENG-2026-10-30",
+      "publisher": "Pemerintah Provinsi Kalimantan Tengah",
+      "published_at": "2026-10-30",
+      "title": "Gubernur Agustiar Perkuat Penanganan Karhutla, Ratusan Sumur Bor Dibangun dan Bantuan Menjangkau Ratusan Ribu Warga",
+      "url": "https://www.kalteng.go.id/berita/read/42893/gubernur-agustiar-perkuat-penanganan-karhutla-ratusan-sumur-bor-dibangun-dan-bantuan-menjangkau-ratusan-ribu-warga",
+      "type": "official_government",
+      "notes": "Mengutip data BPBD Kalteng hingga 28 Oktober 2026 dan kumulatif 1 Januari-28 Oktober 2026."
+    },
+    {
+      "id": "SRC-BNPB-2026-10-24",
+      "publisher": "Badan Nasional Penanggulangan Bencana",
+      "published_at": "2026-10-24",
+      "title": "BNPB Prioritaskan Penanganan Karhutla di Kalimantan Tengah, Sumatera Selatan, dan Kalimantan Barat",
+      "url": "https://www.bnpb.go.id/berita/pergeseran-dua-armada-udara-ke-jatim-tak-ganggu-penanganan-karhutla-di-kalimantan",
+      "type": "official_government",
+      "notes": "Snapshot GIS BNPB pukul 15.00 WIB."
+    },
+    {
+      "id": "SRC-BNPB-2026-10-25",
+      "publisher": "Badan Nasional Penanggulangan Bencana",
+      "published_at": "2026-10-26",
+      "title": "Lebih dari 3.000 Ha Lahan Terbakar di Kalimantan Masih dalam Penanganan",
+      "url": "https://www.bnpb.go.id/berita/lebih-dari-3000-ha-lahan-terbakar-di-kalimantan-masih-dalam-penanganan",
+      "type": "official_government",
+      "notes": "Data penanganan per 25 Oktober 2026."
+    },
+    {
+      "id": "SRC-BNPB-2026-10-22",
+      "publisher": "Badan Nasional Penanggulangan Bencana",
+      "published_at": "2026-10-23",
+      "title": "Tak Hanya di 6 Provinsi Prioritas, BNPB Kerahkan Dukungan Udara untuk Karhutla Jawa Timur",
+      "url": "https://www.bnpb.go.id/berita/tak-hanya-di-6-provinsi-prioritas-bnpb-kerahkan-dukungan-udara-untuk-karhutla-jawa-timur",
+      "type": "official_government",
+      "notes": "Data luas dalam penanganan per 22 Oktober 2026."
+    },
+    {
+      "id": "SRC-IHCP-2026-10-26",
+      "publisher": "Indonesia Humanitarian Coordination Platform",
+      "published_at": "2026-10-26",
+      "title": "Update Situasi Kebakaran Hutan dan Lahan dan Kabut Asap #1",
+      "url": "https://ihcp-indonesia.org/update-situasi-kebakaran-hutan-dan-lahan-dan-kabut-asap-1/",
+      "type": "humanitarian_coordination",
+      "notes": "Mengutip data Kemenkes, SiPongi, dan identifikasi kebutuhan anggota IHCP; angka nasional dan situasi per 19-21 Oktober."
+    },
+    {
+      "id": "SRC-BMKG-2026-10-29",
+      "publisher": "Badan Meteorologi, Klimatologi, dan Geofisika",
+      "published_at": "2026-10-29",
+      "title": "Prakiraan Cuaca Indonesia Sepekan Periode 30 Oktober-5 November 2026",
+      "url": "https://www.bmkg.go.id/cuaca/potensi-hujan-sepekan/prakiraan-cuaca-indonesia-sepekan-periode-30-oktober-5-november-2026-memasuki-awal-november-potensi-hujan-meningkat-di-tengah-kondisi-panas-dan-kering",
+      "type": "official_government",
+      "notes": "Prakiraan cuaca dan konteks kerentanan karhutla; hotspot memerlukan verifikasi lapangan."
+    },
+    {
+      "id": "SRC-BMKG-OMC-2026-10-28",
+      "publisher": "Badan Meteorologi, Klimatologi, dan Geofisika",
+      "published_at": "2026-10-28",
+      "title": "BMKG Uji Modifikasi Cuaca Menggunakan Dry Ice untuk Bantu Atasi Kabut Asap di Kalimantan Tengah",
+      "url": "https://www.bmkg.go.id/berita/bmkg-uji-modifikasi-cuaca-menggunakan-dry-ice-untuk-bantu-atasi-kabut-asap-di-kalimantan-tengah",
+      "type": "official_government",
+      "notes": "Operasi modifikasi cuaca dan pemantauan hotspot 28 Oktober."
+    },
+    {
+      "id": "SRC-KEMKES-DASHBOARD",
+      "publisher": "Kementerian Kesehatan Republik Indonesia",
+      "published_at": "2026-10-30",
+      "title": "Health Crisis Dashboard",
+      "url": "https://www.kemkes.go.id/eng/dashboard-krisis-kesehatan",
+      "type": "official_government",
+      "notes": "Dashboard krisis kesehatan dinamis; isi dan rentang tanggal berubah. Jangan menyalin data dashboard tanpa menyimpan timestamp pengambilan."
+    }
+  ],
+  "data_quality": {
+    "known_inconsistencies": [
+      "Angka hotspot kumulatif Pemprov Kalteng 371.692 sampai 28 Oktober berbeda secara konsep dan periode dari snapshot hotspot BNPB 8.049 pada 24 Oktober. Jangan dijumlahkan atau dibandingkan langsung.",
+      "Luas terbakar tahunan Pemprov Kalteng 20.699 ha berbeda dari luas terbakar snapshot BNPB 13.944 ha karena sumber, metode, cakupan, dan waktu pemutakhiran dapat berbeda.",
+      "Data ISPA dan ISPU IHCP merupakan snapshot nasional/daerah per 19-21 Oktober, bukan pengukuran real-time pada 30 Oktober.",
+      "Jumlah bantuan pangan 450.000 adalah jumlah warga yang disiapkan/ditargetkan menerima bantuan menurut Pemprov, bukan bukti bahwa seluruhnya telah menerima.",
+      "Daftar kabupaten/kota prioritas merupakan dasar asesmen dari laporan historis; kondisi aktual wajib diverifikasi sebelum distribusi."
+    ],
+    "missing_data": [
+      "Jumlah rumah tangga terdampak per desa di Kalimantan Tengah",
+      "Jumlah pengungsi dan rumah rusak khusus akibat karhutla",
+      "Jumlah pasien ISPA per kabupaten/kota di Kalimantan Tengah",
+      "Data penerima bantuan pemerintah per desa dan status penyaluran",
+      "Kebutuhan aktual air bersih per rumah tangga",
+      "Koordinat titik api dan batas area terbakar yang dapat dipakai ulang secara legal"
+    ],
+    "public_display_guidance": [
+      "Selalu tampilkan sumber dan tanggal pengamatan.",
+      "Gunakan label 'data historis' untuk snapshot yang bukan real-time.",
+      "Jangan memberi label 'darurat' atau 'aktif' hanya berdasarkan laporan lama.",
+      "Jangan menampilkan data pribadi penerima bantuan.",
+      "Sediakan status verifikasi: terverifikasi_sumber, perlu_verifikasi_lapangan, estimasi, rekomendasi.",
+      "Pisahkan nilai null dari nol; null berarti belum tersedia, bukan tidak ada."
+    ]
+  }
+}

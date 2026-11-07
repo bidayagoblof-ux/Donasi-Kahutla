@@ -1,0 +1,532 @@
+{
+  "programs": [
+    {
+      "id": "prog-kesehatan-01",
+      "name": "Bantuan Kesehatan & Oksigen Medis Warga ISPA",
+      "category": "Kesehatan",
+      "shortDescription": "Layanan medis keliling, nebulizer, oksigen darurat, dan obat-obatan bagi warga rentan terpapar kabut asap pekat.",
+      "fullDescription": "Kabut asap pekat di Kalimantan Tengah dan wilayah terdampak menyebabkan ratusan ribu kasus ISPA, dengan risiko tinggi bagi balita, anak, dan lansia. Program ini memfasilitasi operasional posko kesehatan udara bersih, penyediaan tabung oksigen, pemeriksaan dokter keliling, dan obat batuk/sesak napas bekerja sama dengan faskes setempat.",
+      "targetLocation": "Palangka Raya, Kotawaringin Timur, & Katingan",
+      "targetAmount": 75000000,
+      "collectedAmount": 28550000,
+      "donorCount": 143,
+      "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-20",
+      "endDate": "2026-12-31",
+      "status": "active",
+      "priority": "darurat",
+      "needsList": [
+        "Tabung oksigen medis",
+        "Alat nebulizer portabel",
+        "Suplemen vitamin",
+        "Obat pernapasan resep faskes",
+        "Ruang singgah berfilter udara"
+      ]
+    },
+    {
+      "id": "prog-air-02",
+      "name": "Distribusi Air Bersih & Dukungan Sumur Bor Gambut",
+      "category": "Air Bersih",
+      "shortDescription": "Penyaluran air minum higienis dan dukungan tangki air pembasahan lahan gambut yang membara di bawah tanah.",
+      "fullDescription": "Kebakaran gambut bersifat membara di bawah permukaan meski api atas padam. Kebutuhan air bersih untuk sanitasi warga dan pembasahan lahan sangat genting di masa transisi musim kemarau ke penghujan. Program ini mendistribusikan tangki air bersih dan membantu operasional sumur bor darurat.",
+      "targetLocation": "Kabupaten Kapuas, Seruyan, & Barito Selatan",
+      "targetAmount": 50000000,
+      "collectedAmount": 19400000,
+      "donorCount": 88,
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-22",
+      "endDate": "2026-12-25",
+      "status": "active",
+      "priority": "darurat",
+      "needsList": [
+        "Distribusi air minum gallon",
+        "Jeriken wadah air keluarga",
+        "Tangki air bergerak 5000L",
+        "Pipa sumur bor pembasahan gambut"
+      ]
+    },
+    {
+      "id": "prog-masker-03",
+      "name": "Bantuan Masker N95 & APD Perlindungan Pernapasan",
+      "category": "Perlindungan",
+      "shortDescription": "Distribusi masker standar N95 dan masker khusus anak untuk melindungi paru-paru dari partikel halus PM2.5 berbahaya.",
+      "fullDescription": "Indeks Standar Pencemar Udara (ISPU) yang menembus level Berbahaya (>1200) menuntut perlindungan pernapasan filter tinggi. Masker kain biasa tidak mampu menyaring partikel mikroskopis karhutla. Program ini mengutamakan anak sekolah, ibu hamil, lansia, dan pekerja harian terbuka.",
+      "targetLocation": "Wilayah ISPU Berbahaya (Kalteng & Sumsel)",
+      "targetAmount": 40000000,
+      "collectedAmount": 15200000,
+      "donorCount": 76,
+      "imageUrl": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-21",
+      "endDate": "2026-12-15",
+      "status": "active",
+      "priority": "tinggi",
+      "needsList": [
+        "Masker N95 respirator pas",
+        "Masker medis pediatrik anak",
+        "Kacamata pelindung asap (goggles)",
+        "Edukasi evakuasi paparan"
+      ]
+    },
+    {
+      "id": "prog-pangan-04",
+      "name": "Paket Pangan Sembako Keluarga Terdampak Karhutla",
+      "category": "Pangan",
+      "shortDescription": "Bantuan pangan bergizi bagi buruh harian dan petani gambut yang terpaksa berhenti bekerja karena asap tebal.",
+      "fullDescription": "Banyak pekerja harian dan petani kehilangan mata pencaharian saat kebun dan ladang terbakar atau tertutup asap pekat. Paket sembako DigitalPal menyuplai beras, minyak goreng, kacang-kacangan, telur, dan makanan pendamping anak agar kebutuhan gizi keluarga tetap terpenuhi.",
+      "targetLocation": "Desa-desa pinggiran hutan Kalteng & Kalbar",
+      "targetAmount": 60000000,
+      "collectedAmount": 22000000,
+      "donorCount": 110,
+      "imageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-23",
+      "endDate": "2026-12-31",
+      "status": "active",
+      "priority": "tinggi",
+      "needsList": [
+        "Beras premium 10kg",
+        "Minyak sayur & gula",
+        "Telur ayam sumber protein",
+        "Biskuit gizi anak balita",
+        "Paket higienitas sabun"
+      ]
+    },
+    {
+      "id": "prog-relawan-05",
+      "name": "Dukungan Logistik & Peralatan Relawan Pemadam Kebakaran",
+      "category": "Operasional",
+      "shortDescription": "Suplai pompa air mini (alcon), selang, bahan bakar, dan logistik nutrisi bagi relawan MPA (Masyarakat Peduli Api).",
+      "fullDescription": "Relawan pemadam dan MPA berjibaku siang-malam menembus semak gambut dengan peralatan terbatas. Program ini melengkapi pompa pemadam bertekanan, selang tahan panas, sepatu boots pelindung, serta makanan siap santap dan multivitamin untuk menjaga stamina mereka di garis depan.",
+      "targetLocation": "Posko Garis Depan Kalteng & Kalsel",
+      "targetAmount": 45000000,
+      "collectedAmount": 18750000,
+      "donorCount": 94,
+      "imageUrl": "https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-20",
+      "endDate": "2026-12-31",
+      "status": "active",
+      "priority": "tinggi",
+      "needsList": [
+        "Pompa pemadam Alcon portabel",
+        "Roll selang semprot 1.5 inch",
+        "Sepatu boots & sarung tangan pemadam",
+        "BBM mesin pompa & logistik energi"
+      ]
+    },
+    {
+      "id": "prog-rentan-06",
+      "name": "Perlindungan Khusus Balita, Ibu Hamil & Lansia",
+      "category": "Kelompok Rentan",
+      "shortDescription": "Pos ramah anak berfilter udara, nutrisi khusus ibu menyusui, dan kunjungan pemeriksaan kesehatan lansia.",
+      "fullDescription": "Anak balita dan lansia adalah kelompok paling rentan mengalami komplikasi paru-paru fatal akibat kabut asap. DigitalPal mendirikan ruang aman bebas asap (Safe Clean-Air Haven) di balai desa mitra lengkap dengan penjernih udara, nutrisi pemulihan, dan pendampingan psikososial.",
+      "targetLocation": "Kotawaringin Timur & Pulang Pisau",
+      "targetAmount": 35000000,
+      "collectedAmount": 11200000,
+      "donorCount": 65,
+      "imageUrl": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-24",
+      "endDate": "2026-12-31",
+      "status": "active",
+      "priority": "menengah",
+      "needsList": [
+        "Air purifier filter HEPA",
+        "Makanan pendamping ASI (MPASI)",
+        "Susu lansia kalsium tinggi",
+        "Alat pengukur saturasi oksigen (Oximeter)"
+      ]
+    },
+    {
+      "id": "prog-darurat-07",
+      "name": "Dana Tanggap Darurat Kemanusiaan Karhutla DigitalPal",
+      "category": "Umum",
+      "shortDescription": "Dana fleksibel cepat-tanggap untuk merespons titik eskalasi api baru dan evakuasi mendesak di seluruh nusantara.",
+      "fullDescription": "Dinamika cuaca dan arah angin karhutla bergerak dinamis. Dana umum ini dialokasikan langsung untuk merespons kebutuhan mendesak yang belum terkaver bantuan formal, seperti evakuasi warga terjebak, armada antar-jemput pasien kritis, dan suplai darurat instan.",
+      "targetLocation": "Wilayah Terdampak Prioritas Nasional",
+      "targetAmount": 100000000,
+      "collectedAmount": 38900000,
+      "donorCount": 205,
+      "imageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80",
+      "startDate": "2026-10-18",
+      "endDate": "2026-12-31",
+      "status": "active",
+      "priority": "darurat",
+      "needsList": [
+        "Dana taktis ambulans air/darat",
+        "Sewa kendaraan evakuasi",
+        "Bantuan darurat langsung keluarga",
+        "Bahan logistik darurat"
+      ]
+    }
+  ],
+  "donations": [
+    {
+      "id": "don-101",
+      "orderId": "DP-20261028-001",
+      "programId": "prog-kesehatan-01",
+      "programName": "Bantuan Kesehatan & Oksigen Medis Warga ISPA",
+      "amount": 500000,
+      "donorName": "Hamba Allah",
+      "donorEmail": "anon@digitalpal.org",
+      "donorMessage": "Semoga saudara-saudara kita di Kalteng lekas pulih dan terbebas dari kepungan asap.",
+      "isAnonymous": true,
+      "paymentMethod": "qris",
+      "paymentStatus": "PAID",
+      "createdAt": "2026-10-28T09:15:00+07:00",
+      "paidAt": "2026-10-28T09:18:22+07:00"
+    },
+    {
+      "id": "don-102",
+      "orderId": "DP-20261028-002",
+      "programId": "prog-air-02",
+      "programName": "Distribusi Air Bersih & Dukungan Sumur Bor Gambut",
+      "amount": 1000000,
+      "donorName": "dr. Hendra Setiawan",
+      "donorEmail": "hendra.s@example.com",
+      "donorMessage": "Sedekah air bersih untuk warga yang terdampak kabut asap karhutla.",
+      "isAnonymous": false,
+      "paymentMethod": "bca_va",
+      "paymentStatus": "PAID",
+      "createdAt": "2026-10-28T10:45:00+07:00",
+      "paidAt": "2026-10-28T10:46:12+07:00"
+    },
+    {
+      "id": "don-103",
+      "orderId": "DP-20261029-001",
+      "programId": "prog-masker-03",
+      "programName": "Bantuan Masker N95 & APD Perlindungan Pernapasan",
+      "amount": 250000,
+      "donorName": "Nurul Hidayati",
+      "donorEmail": "nurul.h@example.com",
+      "donorMessage": "Kuat selalu untuk adik-adik di Palangka Raya dan sekitarnya.",
+      "isAnonymous": false,
+      "paymentMethod": "qris",
+      "paymentStatus": "PAID",
+      "createdAt": "2026-10-29T14:20:00+07:00",
+      "paidAt": "2026-10-29T14:22:45+07:00"
+    },
+    {
+      "id": "don-104",
+      "orderId": "DP-20261029-002",
+      "programId": "prog-relawan-05",
+      "programName": "Dukungan Logistik & Peralatan Relawan Pemadam Kebakaran",
+      "amount": 2500000,
+      "donorName": "Komunitas Pecinta Alam Lestari",
+      "donorEmail": "lestari.alam@example.com",
+      "donorMessage": "Hormat setinggi-tingginya untuk seluruh relawan dan petugas pemadam di garis depan gambut!",
+      "isAnonymous": false,
+      "paymentMethod": "mandiri_va",
+      "paymentStatus": "PAID",
+      "createdAt": "2026-10-29T16:10:00+07:00",
+      "paidAt": "2026-10-29T16:12:08+07:00"
+    },
+    {
+      "id": "don-105",
+      "orderId": "DP-20261030-001",
+      "programId": "prog-darurat-07",
+      "programName": "Dana Tanggap Darurat Kemanusiaan Karhutla DigitalPal",
+      "amount": 150000,
+      "donorName": "Donatur Anonim",
+      "donorEmail": "hambaallah@example.com",
+      "donorMessage": "Doa kami menyertai seluruh korban karhutla.",
+      "isAnonymous": true,
+      "paymentMethod": "gopay",
+      "paymentStatus": "PAID",
+      "createdAt": "2026-10-30T08:05:00+07:00",
+      "paidAt": "2026-10-30T08:06:30+07:00"
+    },
+    {
+      "id": "don-1793354191888",
+      "orderId": "DP-20261030-1409",
+      "programId": "prog-kesehatan-01",
+      "programTitle": "Bantuan Kesehatan & Oksigen Medis Warga ISPA",
+      "amount": 50000,
+      "donorName": "Hamba Allah (Donatur Anonim)",
+      "donorEmail": "benoniusbtc777@gmail.com",
+      "donorPhone": "081293746501",
+      "donorMessage": "Semoga semua kembali normal",
+      "isAnonymous": true,
+      "paymentMethod": "qris",
+      "paymentStatus": "PENDING",
+      "createdAt": "2026-10-30T09:56:31.888Z",
+      "qrisUrl": "00020101021226680016ID.CO.DIGITALPAL.WWW011893600998DP-20261030-140951440014ID.LINKAJA.WWW021593600998DP-20261030-1409520458125303360540500005802ID5919DIGITALPAL PEDULI6013PALANGKARAYA62070703A016304"
+    },
+    {
+      "id": "test-1793354591968-1",
+      "orderId": "DP-TEST-PAID-1793354591968",
+      "programId": "prog-kesehatan-01",
+      "programTitle": "Bantuan Kesehatan & Oksigen Medis Warga ISPA",
+      "amount": 50000,
+      "donorName": "Tester Sandbox Paid",
+      "donorEmail": "test.paid@example.com",
+      "isAnonymous": false,
+      "paymentMethod": "qris",
+      "paymentStatus": "PAID",
+      "createdAt": "2026-10-30T10:03:11.968Z",
+      "paidAt": "2026-10-30T10:03:11.988Z"
+    },
+    {
+      "id": "test-1793354591988-2",
+      "orderId": "DP-TEST-PENDING-1793354591988",
+      "programId": "prog-air-02",
+      "programTitle": "Distribusi Air Bersih",
+      "amount": 100000,
+      "donorName": "Tester Pending",
+      "donorEmail": "test.pending@example.com",
+      "isAnonymous": false,
+      "paymentMethod": "bca_va",
+      "paymentStatus": "PENDING",
+      "createdAt": "2026-10-30T10:03:11.988Z"
+    },
+    {
+      "id": "test-1793354591989-3",
+      "orderId": "DP-TEST-EXP-1793354591989",
+      "programId": "prog-masker-03",
+      "programTitle": "Bantuan Masker N95",
+      "amount": 75000,
+      "donorName": "Tester Expired",
+      "donorEmail": "test.exp@example.com",
+      "isAnonymous": true,
+      "paymentMethod": "mandiri_va",
+      "paymentStatus": "EXPIRED",
+      "createdAt": "2026-10-30T10:03:11.989Z"
+    },
+    {
+      "id": "test-1793354591990-4",
+      "orderId": "DP-TEST-FAIL-1793354591989",
+      "programId": "prog-pangan-04",
+      "programTitle": "Paket Pangan Sembako",
+      "amount": 120000,
+      "donorName": "Tester Fail",
+      "donorEmail": "test.fail@example.com",
+      "isAnonymous": false,
+      "paymentMethod": "gopay",
+      "paymentStatus": "FAILED",
+      "createdAt": "2026-10-30T10:03:11.990Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-2026-005",
+      "title": "Pengadaan 4 Unit Mesin Pompa Air Pemadam Gambut (Alcon)",
+      "programId": "prog-relawan-05",
+      "programName": "Dukungan Logistik & Peralatan Relawan Pemadam Kebakaran",
+      "category": "Peralatan Pemadam",
+      "amount": 12800000,
+      "expenseDate": "2026-10-29",
+      "vendorName": "Toko Mesin Tehnik Mandiri",
+      "receiptNumber": "KW/TMM/X/2026",
+      "status": "Disetujui",
+      "notes": "Disiapkan untuk armada MPA Desa Baun Bango, Katingan.",
+      "approvedBy": "Manajer Operasional Relawan",
+      "approvalDate": "2026-10-29"
+    },
+    {
+      "id": "exp-2026-004",
+      "title": "Pengadaan Paket Sembako Darurat 120 Paket (Beras, Telur, Minyak)",
+      "programId": "prog-pangan-04",
+      "programName": "Paket Pangan Sembako Keluarga Terdampak Karhutla",
+      "category": "Pangan",
+      "amount": 14400000,
+      "expenseDate": "2026-10-28",
+      "vendorName": "Grosir Berkah Bersama Sampit",
+      "receiptNumber": "NOTA-BBB-7729",
+      "status": "Dibayar",
+      "notes": "Diserahkan langsung kepada keluarga rentan dan buruh harian tani yang terdampak.",
+      "approvedBy": "Koordinator Distribusi Pangan",
+      "approvalDate": "2026-10-28"
+    },
+    {
+      "id": "exp-2026-003",
+      "title": "Pembelian 25 Tabung Oksigen Kecil & Isi Ulang Posko ISPA",
+      "programId": "prog-kesehatan-01",
+      "programName": "Bantuan Kesehatan & Oksigen Medis Warga ISPA",
+      "category": "Kesehatan",
+      "amount": 11500000,
+      "expenseDate": "2026-10-27",
+      "vendorName": "Depo Gas Medis Borneo",
+      "receiptNumber": "INV-DGM-2610-449",
+      "status": "Dibayar",
+      "notes": "Disalurkan ke posko singgah udara bersih di Menteng, Palangka Raya.",
+      "approvedBy": "Koordinator Medis Lapangan",
+      "approvalDate": "2026-10-27"
+    },
+    {
+      "id": "exp-2026-002",
+      "title": "Sewa 2 Unit Tangki Air Bergerak 5.000 Liter & Distribusi",
+      "programId": "prog-air-02",
+      "programName": "Distribusi Air Bersih & Dukungan Sumur Bor Gambut",
+      "category": "Air Bersih",
+      "amount": 7200000,
+      "expenseDate": "2026-10-26",
+      "vendorName": "Koperasi Tirta Barito",
+      "receiptNumber": "KW/TB/2026/102",
+      "status": "Dibayar",
+      "notes": "Mobilisasi 4 trip pengisian air bersih untuk 320 KK di pinggiran Kotim.",
+      "approvedBy": "Manajer Keuangan DigitalPal",
+      "approvalDate": "2026-10-26"
+    },
+    {
+      "id": "exp-2026-001",
+      "title": "Pengadaan 1.500 Pcs Masker N95 Standar Medis",
+      "programId": "prog-masker-03",
+      "programName": "Bantuan Masker N95 & APD Perlindungan Pernapasan",
+      "category": "APD & Masker",
+      "amount": 9750000,
+      "expenseDate": "2026-10-25",
+      "vendorName": "PT Medika Husada Sejahtera",
+      "receiptNumber": "INV/MHS/2026/10-8821",
+      "status": "Dibayar",
+      "notes": "Masker didistribusikan ke 3 sekolah dasar dan puskesmas pembantu di Palangka Raya.",
+      "approvedBy": "Direktur Operasional Kemanusiaan",
+      "approvalDate": "2026-10-25"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "dist-004",
+      "programId": "prog-pangan-04",
+      "programName": "Paket Pangan Sembako Keluarga Terdampak Karhutla",
+      "distributionDate": "2026-10-28",
+      "location": "Kec. Mentawa Baru Ketapang, Kotawaringin Timur",
+      "province": "Kalimantan Tengah",
+      "aidType": "Paket Sembako Lengkap Nutrisi",
+      "quantity": 120,
+      "unit": "paket",
+      "beneficiariesCount": 480,
+      "targetGroup": "Keluarga Buruh Tani & Pekerja Harian Terhenti Kerja",
+      "status": "Tersalurkan",
+      "documentationUrls": [
+        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+      ],
+      "notes": "Setiap paket mencakup beras 10kg, minyak goreng 2L, telur 1 rak, dan sarden.",
+      "verifiedBy": "Aparatur Desa & Tim Relawan"
+    },
+    {
+      "id": "dist-003",
+      "programId": "prog-kesehatan-01",
+      "programName": "Bantuan Kesehatan & Oksigen Medis Warga ISPA",
+      "distributionDate": "2026-10-27",
+      "location": "Posko Sehat Menteng, Palangka Raya",
+      "province": "Kalimantan Tengah",
+      "aidType": "Tabung Oksigen & Layanan Terapi Uap Nebulizer",
+      "quantity": 25,
+      "unit": "tabung",
+      "beneficiariesCount": 145,
+      "targetGroup": "Pasien Lansia & Balita Gejala ISPA Akut",
+      "status": "Tersalurkan",
+      "documentationUrls": [
+        "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
+      ],
+      "notes": "Pemeriksaan gratis bekerja sama dengan relawan tenaga medis dan puskesmas setempat.",
+      "verifiedBy": "Dokter Penanggung Jawab Posko"
+    },
+    {
+      "id": "dist-002",
+      "programId": "prog-air-02",
+      "programName": "Distribusi Air Bersih & Dukungan Sumur Bor Gambut",
+      "distributionDate": "2026-10-26",
+      "location": "Kec. Baamang, Kotawaringin Timur",
+      "province": "Kalimantan Tengah",
+      "aidType": "Air Bersih Higienis Tangki",
+      "quantity": 20000,
+      "unit": "liter",
+      "beneficiariesCount": 320,
+      "targetGroup": "Keluarga Terdampak Krisis Sumur Dangkal Gambut",
+      "status": "Tersalurkan",
+      "documentationUrls": [
+        "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80"
+      ],
+      "notes": "Penyaluran tepat sasaran berkoordinasi dengan Ketua RT setempat.",
+      "verifiedBy": "Koordinator Wilayah Kotim"
+    },
+    {
+      "id": "dist-001",
+      "programId": "prog-masker-03",
+      "programName": "Bantuan Masker N95 & APD Perlindungan Pernapasan",
+      "distributionDate": "2026-10-25",
+      "location": "Kec. Pahandut & Jekan Raya, Palangka Raya",
+      "province": "Kalimantan Tengah",
+      "aidType": "Masker N95 & Masker Anak Pediatrik",
+      "quantity": 1500,
+      "unit": "pcs",
+      "beneficiariesCount": 750,
+      "targetGroup": "Siswa SD, Guru, dan Warga Rentan",
+      "status": "Tersalurkan",
+      "documentationUrls": [
+        "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80"
+      ],
+      "notes": "Distribusi diiringi edukasi pemakaian masker kedap udara bagi siswa sekolah dasar.",
+      "verifiedBy": "Tim Lapangan DigitalPal & Relawan BPBD"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1793354591990-306p",
+      "timestamp": "2026-10-30T10:03:11.990Z",
+      "action": "UPDATE_DONATION_STATUS",
+      "actor": "Payment Gateway",
+      "details": "Order DP-TEST-FAIL-1793354591989 changed from PENDING to FAILED"
+    },
+    {
+      "id": "log-1793354591990-gjx5",
+      "timestamp": "2026-10-30T10:03:11.990Z",
+      "action": "CREATE_DONATION",
+      "actor": "Donor System",
+      "details": "Order DP-TEST-FAIL-1793354591989 created for program prog-pangan-04 amount Rp 120.000"
+    },
+    {
+      "id": "log-1793354591989-wnt3",
+      "timestamp": "2026-10-30T10:03:11.989Z",
+      "action": "UPDATE_DONATION_STATUS",
+      "actor": "Payment Gateway",
+      "details": "Order DP-TEST-EXP-1793354591989 changed from PENDING to EXPIRED"
+    },
+    {
+      "id": "log-1793354591989-c77o",
+      "timestamp": "2026-10-30T10:03:11.989Z",
+      "action": "CREATE_DONATION",
+      "actor": "Donor System",
+      "details": "Order DP-TEST-EXP-1793354591989 created for program prog-masker-03 amount Rp 75.000"
+    },
+    {
+      "id": "log-1793354591988-5ela",
+      "timestamp": "2026-10-30T10:03:11.988Z",
+      "action": "CREATE_DONATION",
+      "actor": "Donor System",
+      "details": "Order DP-TEST-PENDING-1793354591988 created for program prog-air-02 amount Rp 100.000"
+    },
+    {
+      "id": "log-1793354591988-4xin",
+      "timestamp": "2026-10-30T10:03:11.988Z",
+      "action": "UPDATE_DONATION_STATUS",
+      "actor": "Payment Gateway",
+      "details": "Order DP-TEST-PAID-1793354591968 changed from PENDING to PAID"
+    },
+    {
+      "id": "log-1793354591987-cnl6",
+      "timestamp": "2026-10-30T10:03:11.987Z",
+      "action": "CREATE_DONATION",
+      "actor": "Donor System",
+      "details": "Order DP-TEST-PAID-1793354591968 created for program prog-kesehatan-01 amount Rp 50.000"
+    },
+    {
+      "id": "log-1793354191909-38k1",
+      "timestamp": "2026-10-30T09:56:31.909Z",
+      "action": "CREATE_DONATION",
+      "actor": "Donor System",
+      "details": "Order DP-20261030-1409 created for program prog-kesehatan-01 amount Rp 50.000"
+    },
+    {
+      "id": "log-1",
+      "timestamp": "2026-10-20T08:00:00+07:00",
+      "action": "SYSTEM_INIT",
+      "actor": "System Bootstrapper",
+      "details": "DigitalPal Karhutla 2026 system initialized with 7 core humanitarian programs."
+    }
+  ],
+  "config": {
+    "midtransServerKey": "SB-Mid-server-sandbox-test-key-2026",
+    "midtransClientKey": "SB-Mid-client-sandbox-test-key-2026",
+    "isProduction": false,
+    "adminPin": "2026"
+  }
+}
